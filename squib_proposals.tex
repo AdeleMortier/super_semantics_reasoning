@@ -1,0 +1,114 @@
+
+\documentclass[]{article}
+\usepackage{cancel}
+
+%opening
+\title{Subject proposals}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+
+\section{The Decoy effect as a ``reasoning under disjunction'' problem}
+We assume a simple version of the problem involving beers. The beers have 2 features, and each feature has 2 possible (and exclusive) values:
+
+	\begin{center}
+		\begin{tabular}{ |c | c | c|}
+	\hline
+	Taste & Good (G) & Bad ($\neg$ G) \\ \hline
+	Price & Expensive ($\neg$ C) & Cheap (C)\\ \hline
+\end{tabular}
+	\end{center}
+The first task is a choice is between 2 beers : a good but expensive one, and a cheap but bad one :
+\begin{equation}
+G \wedge \neg C \vee \neg G \wedge C
+\end{equation}
+This choice can reveal the preferences of the consumer: if he is biased toward taste, he will prefer the good beer; if he is biased toward price, he will prefer the cheap one.
+
+Then we introduce the second task, which is a choice between three beers : the two that have been introduced previously plus a beer that is neither good nor cheap. This third option is asymmetrically dominated by the others \footnote{but not \textit{strictly} dominated}. We introduce it as a ``additional information'' or ``cue'' that is given to the consumer:
+
+\begin{equation}
+\left |
+\begin{array}{l}
+G \wedge \neg C \vee \neg G \wedge C \\
+\neg G \wedge \neg C
+\end{array} \right.
+\end{equation}
+Then, we argue that the bias of the consumer will be accentuated by the presence of this third ``useless'' option : the ``gourmet'' consumer will even more prefer the good-and-expensive option, and the ``stingy'' consumer will even more prefer the bad-and-cheap option. To come up with this conclusion, we assume that the biased consumer only pays attention to the parts of the problem that does not contradict their preferences. For instance, a consumer that has preferred taste over price in the first task will turn the second task into:
+\begin{equation}
+\left | \begin{array}{l}
+G \wedge \neg C \vee \neg G \wedge C \\
+\cancel{\neg G \wedge} \ \ \neg C
+\end{array}\right .
+\end{equation}
+We are then in a case of illusory inference under disjunction, and the consumer will pick up the good-but-not-cheap situation in the first premise, because it matches the cue:
+\begin{eqnarray}
+G \wedge \neg C \ \ \cancel{\vee \neg G \wedge C} \\
+\cancel{\neg G \wedge} \ \ \neg C
+\end{eqnarray}
+Which gives the answer we wanted for this ``gourmet'' consumer : $G \wedge \neg C$.
+
+\section{Complexity of some but not all \textit{vs} all and some, link with computational models and experimental RTs}
+\subsection{Computational model}
+We try to prove algorithmically that the rules ``some'' and ``all'' involve simpler operations than the rule ``some but not all''. To do so, we try to compute the average time needed to determine if a sequence of $N$ shapes verifies each of the 3 rules, according to the following algorithms:
+\begin{itemize}
+	\item SOME$_P$ : if the list is empty, return FALSE; else check the first shape of the list, if it verifies P then return TRUE, else, perform SOME$_P$ on the rest of the list. 
+	\item ALL$_P$ : if the list is empty return TRUE; else check the first shape of the list, if it verifies P then perform ALL$_P$ on the rest of the list, else return FALSE;
+	\item SBNA$_P$ : set FOUND to 0; if the list is empty return FALSE; else check the first shape of the list !!!TODO!!!
+\end{itemize}
+[We can also express these algorithms as automata, and prove that some but not all is more complex because it involves more states that the 2 others.]
+\subsection{Reaction times}
+We then propose an experimental design to test the adequacy of the formulas we obtained with the ``real'' reaction time of people. A typical task would be a task where the subject has to check whether some sequences of shapes verify certain rules, with some sequences verifying more than one rule (\textit{e.g.}, some and some but not all...).\\
+We can also check whether the simpler rules are more often used when people have a limited amount of time to answer. We may want to check whether the strategy of the subject changes precisely when she has sufficient time to perform (on average) a SOME$_P$ algorithm, but not a SBNA$_P$ algorithm... This would prove that in ambiguous cases (where a some rule and a some but not all rule can explain the data), the SOME$_P$ algorithm is a fast and cheap heuristic, whereas the SBNA$_P$ algorithm is a more complex way of thinking (cf. System 1 vs System 2...).
+\subsection{Link with machine learning}
+Another approach would be linked to statistical learning. the SOME$_P$ algorithm would be more robust for the classification of additional new data, whereas the SBNA$_P$ algorithm can be suspected of overfitting the data. We could test whether people are unconsciously aware of that. A first condition would be a one-shot learning condition, when we say to the subject that the sequences of shapes verifying the rule form a closed set. A second condition would be a two step learning task, when we say to the subject that they only have a subset of the sequences of shapes verifying the rule. In the first condition, people should prefer the SBNA$_P$ rule, whereas in the second condition, they would prefer the SOME$_P$ rule.
+
+\section{Framing of problems and the disjunction fallacy}
+In the course we have seen that people tend to make illusory inferences when they face disjunctions of conjunctions. We would like to test this effect on disjunctions of implications, framed in two different ways:
+\begin{equation}
+(A \Rightarrow B \vee C \Rightarrow D) \iff (\neg A \vee B \vee \neg C \vee D)
+\end{equation}
+The difference between the two framings of the problem is that the first one uses different symbols ($\Rightarrow$ and $\vee$), whereas the second one always uses the same symbol ($\vee$); it is thus ``flatter'' and allows for a more ``intuitive'' use of the commutative property:
+\begin{equation}
+(\neg A \vee B \vee \neg C \vee D) \iff (\neg A \vee D \vee \neg C \vee B)
+\end{equation}
+We would like to devise an experimental design to show that these two framings, although equivalent, give different distributions of answers. To that end, we use the ``2-premises'' paradigm we have seen in the course:
+\begin{equation}\left | 
+\begin{array}{l r}
+A \Rightarrow B \vee C \Rightarrow D & \mbox{[main premise]} \\
+A & \mbox{[cue]}
+\end{array} \right .
+\end{equation}
+In that setting, we expect people to use the cue to ``modify'' the main premise (illusory step):
+\begin{equation}\left |
+\begin{array}{l r}
+A \Rightarrow B \ \ \cancel{\vee C \Rightarrow D} & \mbox{[main premise]} \\
+A & \mbox{[cue]}
+\end{array} \right .
+\end{equation}
+And then to use the cue to conclude:
+\begin{equation} \left |
+\begin{array}{lr}
+\cancel{A \Rightarrow} \ \ B \ \ \cancel{\vee C \Rightarrow D} & \mbox{[main premise]} \\
+A & \mbox{[cue]}
+\end{array} \right .
+\end{equation}
+So we expect people to answer very often TRUE to the question ``is it the case that B?''. To the contrary, in the flat framing we have:
+\begin{equation}
+\left |\begin{array}{lr}
+\neg A \vee B \vee \neg C \vee D & \mbox{[main premise]} \\
+A & \mbox{[cue]}
+\end{array} \right .
+\end{equation}
+And people, instead of doing the ``illusory step'' will perform a more classic disjunction elimination:
+\begin{equation}\left |
+\begin{array}{lr}
+\cancel{\neg A \vee} \ \ B \vee \neg C \vee D & \mbox{[main premise]} \\
+A & \mbox{[cue]}
+\end{array} \right .
+\end{equation}
+And we expected their answer to the questions ``Is it the case that B?'',``Is it the case that not C?'', ``Is it the case that D?'' to be more balanced than in the first condition.
+
+\end{document}
