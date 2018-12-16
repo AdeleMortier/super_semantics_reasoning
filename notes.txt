@@ -1,0 +1,7 @@
+* yes it's because of the JL article. They really wanted their disjunction to be interpreted as a XOR, because it made I think nice predictions with MM theory and bad predictions when doing regular tryth-table. That was possibly more convenient for them to prove that their model was more accurate wrt human reasoning than exhaustive truth tables. And I wanted to reproduce their setting that prevented people from doing inclusive disjunctions. But of course I can change that. The only problem is that in this case, maybe it will be difficult to see whether the interpretations people tend to do are due to their various possible interpretations of the disjunction, or to their interpretation of the operators in the scope of disjunction.
+
+*I think that these cases are a bit more difficult to judge than the others. The decision to take intuitively is less sharp. So yes it would be tinterresting to see if there is really a trend in pepole's behavior.
+
+*We talked about this last time, it was also your idea! 
+
+*I did this section quite rapidly, but yes your are right, there are certainly other metrics that may result in clearer distinctions in the decisions that may be taken by the subjects.
