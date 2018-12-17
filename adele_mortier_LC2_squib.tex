@@ -21,10 +21,11 @@
 		LC2 Squib
 \end{large}}
 \author{Adèle Mortier}
+\date{}
 \begin{document}
 	\nocite{*}
 \maketitle
-\section{Introduction}
+\section*{Introduction}
 ``Illusory inferences'' \cite{johnsonlaird1999} are illogical conclusions that people tend to draw in a systematic way when faced with certain classes of logical puzzles. Therefore, these inferences represent a real challenge for logicians and psychologists, because they question the ability of humans to reason in a sound way. The puzzles we are interested in have the following form:
 \begin{center}
 	$\left |
@@ -33,83 +34,70 @@
 	atomic cue
 \end{tabular}\right.$
 \end{center}
-Where the logical expressions are somewhat ``translated'' into natural language. This translation may be problematic; since natural language is by nature ambiguous, it is difficult to ensure that all people understand the logical operators of natural language as they should be understood within the ``pure'' logic. Moreover, there can be different possible translations for the same logical reality; and as we will see, these translations may be interpreted differently. That is what we call ``framing'' in our context. For instance, the following (equivalent) logical formulae may have different translations:
-\begin{eqnarray*}
-A \vee B \vee C \vee D &\iff_{associativity}& (A \vee B) \vee (C \vee D)\\ &\iff_{associativity}& (A \vee B \vee C) \vee D \\ &\iff_{commutation}& D \vee B \vee C \vee A \\
-(A \rightarrow B) \vee (C \rightarrow D) &\iff_{equivalence}& (\neg A \vee B) \vee (\neg C \vee D) \\ &\iff_{associativity}& (\neg A \vee B \vee \neg C) \vee D\\ &\iff_{commutation}& D \vee B \vee \neg C \vee \neg A
-\end{eqnarray*}
-In what follows, we would like to develop a way to compare the illusory potential of several puzzles that have been well-documented over the last 30 years. Some of them convey the same logical truth-conditions, but are presented in a different way. If these problems and the conclusions they trigger are now well-known, trying to rank them appears as a quite novel approach to the general problem of illusory inferences.
+Where the logical expressions are somewhat ``translated'' into natural language. This translation may be problematic; since natural language is by nature ambiguous, it is difficult to ensure that all people understand the logical operators of natural language as they should be understood within the ``pure'' logic. Moreover, there can be different possible translations for the same logical reality; and as we will see, these translations may be interpreted differently. That is what we call ``framing'' in our context.\\
+In what follows, we would like to develop a way to compare the illusory potential of several puzzles that have been well-documented over the last 30 years. Some of them convey the same logical truth-conditions, but are presented in a different way. If these problems and the conclusions they trigger are now well-known, trying to rank them with respect to their difficulty appears as a quite novel approach to the general problem of illusory inferences.
 \section{Problems}
 \subsection{Presentation}
-We present here several puzzles we would like to compare. Some of them seem to trigger intuitive answers that turn out to be wrong; some other trigger answer that appear to be right.\\
+We present here several puzzles we would like to compare. Some of them seem to trigger intuitive answers that turn out to be wrong; some other trigger the right answers (w.r.t. the logical ``gold standard'').\\
 
-$($XOR$/\rightarrow) :\\\left |
-\begin{tabular}{l}
-	If there is a king then there is an ace or else, if there is not a king then there is an ace\\
-	There is a king\\
-\end{tabular}\right.$\\
-$\Longrightarrow$ There is an ace (there is not an ace!)\\
-
-$($XOR$/\wedge) :\\\left |
+\begin{tabular}{ll}
+	(XOR/$\rightarrow$) : & (XOR/$\wedge$) : \\
+	$\left |
 	\begin{tabular}{l}
-		There is a king and there is an ace or else, there is not a king and there is an ace\\
-		There is a king\\
-	\end{tabular}\right.$\\
-$\Longrightarrow$ There is an ace (indeed)\\
-
-$($XOR$/\vee)\\
-\left |
+	- If there is a king then there is an ace or else,\\
+	if there is not a king then there is an ace\\
+	- There is a king\\
+	\end{tabular}\right.$ &
+	$\left |
 	\begin{tabular}{l}
-		There is a king or there is an ace or else, there is not a king or there is an ace\\
-		There is a king \\
-	\end{tabular}\right.$\\
-$\Longrightarrow$ 		There is an ace (there is not an ace!)\\
+		- There is a king and there is an ace or else,\\
+		there is not a king and there is an ace\\
+		- There is a king\\
+	\end{tabular}\right.$ \\
+	$\Longrightarrow$ There is an ace (there is not an ace!)
+	&
+	$\Longrightarrow$ There is an ace (indeed) \vspace{2mm} \\ 
+	
+	(XOR/$\vee$) : & (XOR/XOR)\\
+	$\left |
+	\begin{tabular}{l}
+	- There is a king or there is an ace or else,\\
+	there is not a king or there is an ace\\
+	- There is a king \\
+	\end{tabular}\right.$
+	&
+	$\left |
+	\begin{tabular}{l}
+	- There is a king or else there is an ace or else,\\
+	there is not a king or else there is an ace\\
+	- There is a king \\
+	\end{tabular}\right.$ \\
+	$\Longrightarrow$ There is not an ace (indeed) &
+	$\Longrightarrow$ There is not an ace (impossible to conclude!)\\
+\end{tabular}
 
-$($XOR/XOR$)\\\left |
-\begin{tabular}{l}
-There is a king or else there is an ace or else, there is not a king or else there is an ace\\
-There is a king \\
-\end{tabular}\right.$\\
-$\Longrightarrow$ There is not an ace (it should be impossible to conclude!)\\
+
 
 \subsection{Interpretations}
-The first puzzle, (XOR/$\rightarrow$) seems to strongly suggest that there is an ace; yet, the opposite conclusion should be drawn. The second puzzle (XOR/$\wedge$) also suggests that there is an ace, and  indeed, this condition must be met (it is a control). The third problem is maybe less convincing than the first one, but we hypothesize that it should also lead to the illusory inference that there is an ace. Note that logically speaking, the first problem and the third problem are the same. The last problem (XOR/XOR) is also debatable; but it may lead to the conclusion that there is not as ace; whereas it should be impossible to conclude.\\
-We could also think of natural generalizations of these problems, where $\neg K$ (``there is not a king'') is replaced by another atomic formula (for instance Q, for ``there is a queen'', or $\neg Q$). But this is a bit beyond the scope of this squib.
+The first puzzle, (XOR/$\rightarrow$) seems to strongly suggest that there is an ace; yet, the opposite conclusion should be drawn. The second puzzle (XOR/$\wedge$) also suggests that there is an ace, and  indeed, this condition must be met (it is a control). The third problem is maybe less easy than the last ones, but we hypothesize that it should lead to the inference that there is not an ace, which is a correct inference. Note that logically speaking, the first problem and the third problem are the same, but only one of them (the first) is expected to lead to an illusory inference. The last problem (XOR/XOR) is also debatable; but it may lead to the conclusion that there is not as ace; whereas it should be impossible to conclude.
 \subsection{Issues}
-The problems we studied above involve the expression ``or else'', that has a disjunctive force. The problem is that the precise semantics people give to this operator it quite unclear:
+\subsubsection{Disjunction}
+The problems we studied above involve the expression ``or else'', that has a disjunctive force. The main issue is that the precise semantics people give to this operator it quite unclear:
 \begin{itemize}
-	\item some of them could sort of ``miss the point'' and interpret this as a conjunction (although some control experiments have shown that it is quite unlikely \cite{johnsonlaird1999});
-	\item some of them could see this as an inclusive disjunction (even though the word ``else'' should inhibit this interpretation);
-	\item some of them could see this as an exclusive disjunction (that is favored by ``else'');
-	\item but more interrestingly, some of them could see this as an asymmetric ``or'', of the form $\lambda P. \ \lambda Q. \ P \vee \neg P \wedge Q $. This interpretation is linked to an algorithmic reading of ``or'' where the second disjunct is evaluated only if the first one is false.
+	\item some of them might ``miss the point'' and interpret this as a conjunction -- although some control experiments involving a ``think-aloud'' tasks have shown that it is quite unlikely \cite{johnsonlaird1999};
+	\item some of them may see this as an inclusive disjunction -- even though the word ``else'' should inhibit this interpretation, ``or else'' could also mean something like $\lambda P. \ \lambda Q. \ P \vee \neg P \wedge Q $ which is itself equal to $\lambda P. \ \lambda Q. \ P \vee Q = \vee$;
+	\item some of them may see this as an exclusive disjunction -- which was what we expected at the beginning;
 \end{itemize} 
-Solutions to this problem would be to try to control the interpretations people do by presenting the problem in a very explicit way. But the last interpretation we have considered may be very difficult to remove totally. Another solution would be to ignore this problem, and consider that the subjects may do several exhaustification operations on top of the reasoning process.\\
-
-Another problem lies in the use of if-clauses, that are very controversial in the field of reasoning. Although if-clauses are defined unequivocally in classical logic ($\rightarrow$ is indeed equivalent to $\lambda P. \ \lambda Q. \ \neg P \vee Q$), the conclusions that people tend to draw are often quite different:
+Solutions to this problem would be to try to control the interpretations people do by presenting the problem in a very explicit way. Another possibility would be to ignore this problem, and consider that the subjects may do several exhaustification operations on top of the reasoning process.
+\subsubsection{Entailment}
+Another problem lies in the use of if-clauses, that are very controversial in the field of reasoning \cite{johnsonlaird1999,barrouillet2000}. Although if-clauses are defined unequivocally in classical logic ($\rightarrow$ is indeed equivalent to $\lambda P. \ \lambda Q. \ \neg P \vee Q$), the conclusions that people tend to draw are often quite different:
 \begin{itemize}
-	\item either they consider ``if A then B'' as a function that takes a proposition A and returns a proposition B (note that it is an intuitionistic interpretation very close to the BHK interpretation of conditionals);
-	\item or they consider that ``if A then B'' is an expression akin to ``A and B'', but that is only defined when A is true.
+	\item either they consider ``if A then B'' as a function that takes a proposition A and returns a proposition B (note that it is an intuitionistic interpretation very close to the BHK interpretation of conditionals, see for instance \cite{troelstra1977});
+	\item or they consider that ``if A then B'' is an expression akin to ``A and B'', but that is only defined when A is true (hypothesis of the defective truth table see for instance \cite{byrne2009}).
 \end{itemize}
 Both interpretations agree on the fact that natural language conditionals behave weirdly when the antecedent is false; this also explains why people perform poorly at Wason selection task and other tasks involving \textit{modus tollens}. The first interpretation makes the consequent necessary, while the second interpretation \textit{depends} on the consequent.
-\begin{table}
-	\centering
-	\begin{tabular}{c|c|c}
-		A & B & A $\rightarrow$ B \\ \hline
-		0&0&1\\
-		0&1&1\\
-		1&0&0\\
-		1&1&1\\
-	\end{tabular}\qquad
-\begin{tabular}{c|c|c}
-	A & B & A $\rightarrow$ B \\ \hline
-	0&0& -\\
-	0&1& -\\
-	1&0&0\\
-	1&1&1\\
-\end{tabular}
-\caption{Truth tables corresponding to ``material'' implication (left) and to ``real-world'' conditionals used by reasoners  (right)}
-\end{table}
-\section{Experience proposals}
+\section{Experiment}
+\subsection{Measures}
 We aim at ranking the different illusory problem with respect to their ``illusory potential''. We hypothesize that the first problem should have the strongest illusory potential, while the others would have lower illusory potentials.\\
 To do so, we may consider three different metrics (for a given puzzle, and a given answer):
 \begin{itemize}
@@ -118,78 +106,21 @@ To do so, we may consider three different metrics (for a given puzzle, and a giv
 	\item the average confidence in the answer;
 	\item the average time needed to come up with the answer;
 \end{itemize}
-Puzzles with a strong illusory potential should lead to quick and very definitive answers, for a majority af participants.\\
-For the experimental setting, we present the puzzles a bit differently. To avoid misinterpretations of the operator ``or else'' (intended to be an exclusive or), we will present the two alternative separately in a randomized order, and specify that one and only one of the alternatives is true. This allows to observe the behavior of the participant with respect to the inner operators only. Each participant will face the control puzzle (XOR/$\wedge$) plus one additional illusory puzzle, to avoid learning effect.
-\section{Possible explanations}
+Puzzles with a strong illusory potential should lead to quick and very definitive answers, for a majority af participants.
+\subsection{Design}
+To design the experiment, we have to control how people interpret the main disjunctive operator; we are interested in both inclusive and exclusive interpretations but want them to be clearly delineated. We use a protocol similar to the ones designed in \cite{johnsonlaird1999, khemlani2009}. For the inclusive or, we introduce the two disjuncts by telling the participant that ``at least one of the following properties is true; and both of them can be true''. For the exclusive or, we introduce the two disjuncts by telling the participant that ``one and only one of the following properties is true''. This formulation may help to avoid misinterpretations of the operator. The question asked to the participant after the presentation of the puzzle will have the form of a multiple choice question (basically between A/$\neg$A/cannot say).\\
+To avoid learning effect and any possible interaction between the XOR and th OR conditions, we assign each participant to only one of the two conditions (OR or XOR). Each participant will be confronted with one control problem (where the intuitive answer given by our model is congruent with the logical answer) and two illusory illusory inferences, in a randomized order. The reaction time (time between the presentation of the problem and the definitive answer) would also be measured; the participant will be told at the beginning of the experiment to answer as quickly but also as reliably as possible.The participant will be invited to rate their level of confidence after they have given their answer. 
+\section{Models}
+Different models of human reasoning may explain the phenomena we expect to measure. But actually, some of our conditions are quite unpredictable (especially the XOR/OR, XOR/XOR and OR/XOR cases). Therefore, we would like to see whether the existing models will capture what happens experimentally with these puzzles. We may also investigate how these models allow to measure the ``illusory potential'' of our different problems, theoretically.
 \subsection{Mental model theory}
-It is a very popular theory that covers a lot of problems like the ones we have seen so far. It is based on the strong assumption that people fail to represent ``what is false''. More precisely, they build mental representations of the ``models'' that make a formula true, but only in terms of what has to be fulfilled, not in terms of what has to be invalid. This models are thus inspired from model theory, but they are in a way underspecified. Computing a mental model for a given formula consists in:
-\begin{itemize}
+MM theory is a very popular theory introduced by Johnson-Laird and that covers a lot of problems like the ones we have seen so far. It is based on the strong assumption that people fail to represent ``what is false''. More precisely, they build mental representations of the ``models'' that make a formula true, but only in terms of what has to be fulfilled, not in terms of what has to be invalid. This models are thus inspired from model theory, but they are in a way underspecified. Computing a mental model for a given formula consists in:
+\begin{enumerate}[label=(\roman*)]
 	\item building the explicit truth table of the problem;
 	\item identifying the models (or valuations) such that the problem is valid;
 	\item simplifying these models by only keeping a list of the atomic formulae whose valuation is 1.
-\end{itemize}
-\begin{table}[H]
-	\centering
-	\begin{tabular}{ccccc}
-	Problem & Mental model & Mental model conclusion & Intuitive conclusion & Logical conclusion\\ \hline
-	(XOR/$\rightarrow$) & \begin{tabular}{ccc}
-		\textbf{K} & \textbf{A} & \_ \\
-		\_& A & $\neg$K
-	\end{tabular}& A & A & $\neg$A \\ \hline
-	(XOR/$\wedge$) & \begin{tabular}{ccc}
-		\textbf{K} & \textbf{A} & \_ \\
-		\_& A & $\neg$K
-	\end{tabular}& A & A & A \\ \hline
-	(XOR/$\vee$) & \begin{tabular}{ccc}
-		\textbf{K} & \_ & \_ \\
-		\_& A & $\neg$K \\
-		\_&\_& $\neg$K
-	\end{tabular}& $\neg$A & $\neg$A (?) & $\neg$A \\ \hline
-	(XOR/XOR) & \begin{tabular}{ccc}
-		\textbf{K} & \_ & \_ \\
-		\_& \_ & $\neg$K
-	\end{tabular}& $\neg$A & $\neg$A (?) & nothing \\ \hline
-	(OR/$\rightarrow$) & \begin{tabular}{ccc}
-		\textbf{K} & \textbf{A} & \_ \\
-		\_ & A & $\neg$K \\
-		K & A & $\neg$K
-	\end{tabular}& A & A & nothing \\ \hline
-	(OR/$\wedge$) & \begin{tabular}{ccc}
-		\textbf{K} & \textbf{A} & \_ \\
-		\_ & A & $\neg$K \\
-		K & A & $\neg$K
-	\end{tabular}& A & A & A \\ \hline
-	(OR/$\vee$) & \begin{tabular}{ccc}
-		\textbf{K} & \_ & \_ \\
-		\_ & A & \_\\
-		\textbf{K} & \textbf{A} & \_ \\
-		\_ & \_ & $\neg$K \\
-		\_ & A & $\neg$K \\
-	\end{tabular}& nothing & A (?) & nothing \\ \hline
-	(OR/XOR) & \begin{tabular}{ccc}
-		\textbf{K} & \_  & \_ \\
-		 \_ & A & \_ \\
-		 \textbf{K} & \textbf{A} & \_ \\
-		 \_ & \_ & $\neg$K \\
-		\_ & A & $\neg$K \\
-	\end{tabular}& nothing & $\neg$A (?) & nothing \\ \hline
-\end{tabular}
-\caption{Mental model predictions \textit{vs} logical conclusions. The question mark means that the judgment may be not very sharp, and that we should test these framings.}
-\end{table}
-\subsection{Algorithmic approach}
-This approach assumes that people tend to reason like algorithms; and like algorithms, they may be prone to ``lazy'' evaluation : they compute truth values only when it is needed. The most simple example of what is ``lazy'' would be the following:
-\begin{equation*}
-	LOR_{lazy}(A)(B) = \mbox{ if } A \mbox{ then } A \mbox{ else } B
-\end{equation*}
-This amounts to saying that first we examine the left disjunct (Left OR), and if it is true we consider the sentence true. If it is not, we examine the right disjunct and check whether it is true.\\
-Here, we use a variant of this kind of lazy processing, where we assume that people continue the evaluation if they cannot find enough evidence for a given answer:\\
-X XOR Y : first suppose X is true and conclude what are the truth values of X's subformulae. If X cannot be true or does not allow to conclude, then try on Y.\\
-(XOR/$\rightarrow$) : we suppose that K is true. We begin by evaluating $K \rightarrow A$, and this returns A, so A must be true. If the two XORed alternatives had been swapped, we would have begun by evaluating $\neg K \rightarrow A$, which gave us nothing, and then we would have evaluated $K \rightarrow A$, with the same result as before.\\
-(XOR/$\wedge$) : we suppose that K is true. We begin by evaluating $K \wedge A$, which forces A to be true, so A must be true. If the two XORed alternatives had been swapped, we would have begun by evaluating $\neg K \wedge A$ which gave us nothing, and then we would have evaluated $K \wedge A$, with the same result as before.\\
-(XOR/$\vee$) : we suppose that K is true. We begin by evaluating $K \vee A$, which gives us nothing special, so we evaluate $\neg K \vee A$, which gives us A (by disjunction elimination). So A is true. If the two XORed alternatives had been swapped, we would have begun by evaluating $\neg K \vee A$, with the same result as before.
-(XOR/XOR) : we suppose the K is true. We begin by evaluating $K XOR A$, and within $K XOR A$, we begin by evaluating K , which is true. Then, we move to the second alternative, and evaluate $ \neg K XOR A$. We first begin by evaluating $\neg K$, which contradicts our hypothesis. We then move to A, which must be true.  If the two XORed alternatives had been swapped, we would have begun by evaluating $\neg K XOR A$, which would have given A too.\\
+\end{enumerate}
+The step that generates illusory inferences (and deviates from model theoretic logic) is the last one.
 
-In that framework, the illusory potential of an inference could be measured as the number of steps that have to be performed to find an answer. The first three problems appears to be equally costly, while the fourth one demands more evaluations.
 \subsection{Probabilistic approach}
 This approach considers reasoners as hypothesis testers. When facing two alternatives, reasoners chose the one that fits the best what they already know. If the problem is as follows:
 \begin{center}
@@ -207,104 +138,19 @@ If we consider that $\mathbb{P}[X|C]$ is a good approximation of $\mathbb{P}[C\r
 \mathbb{P}[X|C] &-& \mathbb{P}[X]\\
 \log(\mathbb{P}[X|C]) &-& \log(\mathbb{P}[X])
 \end{eqnarray*}
-(XOR/$\rightarrow$) : \\
-\begin{eqnarray*}
-\mathbb{P}[K \rightarrow A|K] &=& \mathbb{P}[A|K, K] = \mathbb{P}[A|K]\\
-\mathbb{P}[\neg K \rightarrow A|K] &=& \mathbb{P}[A|\neg K, K] \simeq \mathbb{P}[A]
-\end{eqnarray*}
-(XOR/$\wedge$) : \\
-\begin{eqnarray*}
-\mathbb{P}[K \wedge A|K] &=& \mathbb{P}[A, K|K] = \mathbb{P}[A|K]\\
-\mathbb{P}[\neg K \wedge A|K] &=& \mathbb{P}[A, \neg K| K] = 0
-\end{eqnarray*}
-(XOR/$\vee$) : \\
-\begin{eqnarray*}
-\mathbb{P}[K \vee A|K] &=& \mathbb{P}[A \cup K|K] = \mathbb{P}[A|K]\\
-\mathbb{P}[\neg K \vee A|K] &=& \mathbb{P}[A \cup \neg K| K] = \mathbb{P}[A|K]
-\end{eqnarray*}
-(XOR/XOR) : \\
-\begin{eqnarray*}
-\mathbb{P}[K XOR A|K] &=& \mathbb{P}[\neg A]\\
-\mathbb{P}[\neg K XOR A|K] &=& \mathbb{P}[A]
-\end{eqnarray*}
+These measures are differential measures. The first measure is basically the increment of probability mass that is added to X by the fact that C is known. The rationale behind this formula is that people tend to prefer the option whose probability is ``boosted'' the most by the cue they are given -- they want the cue to be optimally useful. The second measure is also a differential measure, but a multiplicative one (because of the log). This approach is consistent with the fact that people perceive intervals between numerical quantities logarithmically.
+
+
 \subsection{Graph-theoretic approach}
 Here, we develop an alternative approach that is inspired by proof nets, a graphical way of representing proofs. We divide the reasoning process into 5 steps:
 \begin{enumerate}[label=(\roman*)]
 	\item building of the proof tree corresponding to the non-atomic formula;
 	\item computation of the truth values on the leaves using the context;
 	\item bottom-up propagation of the truth values;
-	\item deduction of additional truth values (by elimination);
-	\item top-down propagation of the new truth values
+	\item deduction of additional truth values;
+	\item top-down propagation of the new truth values.
 \end{enumerate}
-The reasoning process amounts to a traversal of the tree, that is successively bottom-up and top-down. Note that steps (iii), (iv), (v) may be repeated more than once, until a truth value ($\top$) has been found for the root. We assume that the branches of the tree are labeled by a pair (context;truth value). A branch labeled with (K; ) has an underspecified truth value. The context corresponds to what the reasoner has inferred -- what he knows to be the case. Initially (at the root of the tree), the context consists of the cue that has been given to the reasoner as part of the problem. The context can be enriched when the reasoner crosses conditionals, that basically add the consequent to the context if the context matches the antecedent. The truth value of a branch corresponds to the truth value of the subformula that corresponds to this branch. Truth values are computed incrementally, bottom-up or top-down (using the regular truth-functional semantics of the operators crossed)\\
-
-
-	\begin{table}[H]
-		\begin{footnotesize}
-		\begin{tabular}{ccc}
-	[[ X XOR Y ]]$^K$ = \Tree [.{K; } [.{XOR} [.{[[X]]$^K$} ] [.{[[Y]]$^K$} ] ] ]&
-	[[ X OR Y ]]$^K$ = \Tree [.{K; } [.{OR} [.{[[X]]$^K$} ] [.{[[Y]]$^K$} ] ] ]&
-	[[ X AND Y ]]$^K$ = \Tree [.{K; } [.{AND} [.{[[X]]$^K$} ] [.{[[Y]]$^K$} ] ] ] \vspace{4mm} \\ 
-	$[[$ NOT X ]]$^K$ = \Tree [.{K;} [.{NOT} [.{[[X]]$^K$} ] ] ]&
-	[[ X IMP A ]]$^K$ = $\left \lbrace \begin{tabular}{ll}
-	K, A; $\top$ &if X $\in$ K\\
-	;$\bot$ & otherwise \\
-	\end{tabular}\right.$
-	&
-	[[A]]$^K$ = $\left \lbrace \begin{tabular}{ll}
-		K; $\top$ &if A $\in$ K\\
-		;$\bot$ & if $\neg$A $\in$ K \\
-		$X_A$; & otherwise
-	\end{tabular}\right.$
-\end{tabular}
-\end{footnotesize}
-\caption{Tree building rules}
-	\end{table}
-The bottom-up propagation rules for $\top$ and $\bot$ correspond to the classical rules associated with the different binary operators. For instance, a AND node whose two incoming branches are labeled $\top$ will propagate $\top$; a XOR node that has one $\bot$-branch and one $\top$-branch will propagate $\top$ too, etc. When the propagation reaches the root of the tree, we consider that we are done, and we can conclude that all the formulae that can be read on the leaves of the $\top$-branches hold.\\
-
-If the propagation stops before the root is reached, we have to do a so-called deduction step. The deduction step must be performed preferentially in very specific node of the tree, namely the nodes that already have an incoming $\top$-branch. If no such node exists, we perform the deduction step on a node that has an incoming $\bot$-branch. Basically, the deduction step infers  additional propositions that must hold for the whole formula to be satisfied:\\
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{cccccc}
-	\Tree [.XOR [.{$\top$} ] [. ] ] &$\Longrightarrow$& \Tree [.XOR [.{$\top$} ] [.{$\bot$} ] ] &
-	\Tree [.XOR [. ] [.{$\top$} ] ] &$\Longrightarrow$& \Tree [.XOR [.{$\bot$} ] [.{$\top$} ] ] \\
-	\Tree [.AND [. ] [.{$\top$} ] ] &$\Longrightarrow$& \Tree [.AND [.{$\top$} ] [.{$\top$} ] ] &
-	\Tree [.AND [.$\top$ ] [.{} ] ] &$\Longrightarrow$& \Tree [.AND [.{$\top$} ] [.{$\top$} ] ]\\
-	\Tree [.XOR [.{$\bot$} ] [. ] ] &$\Longrightarrow$& \Tree [.XOR [.{$\bot$} ] [.{$\top$} ] ] &
-	\Tree [.XOR [. ] [.{$\bot$} ] ] &$\Longrightarrow$& \Tree [.XOR [.{$\top$} ] [.{$\bot$} ] ]\\
-\end{tabular}
-\caption{Deduction rules}
-\end{table}
-Then, it becomes possible to perform top-down propagation to deduce truth values for yet unknown atomic formulae (noted $X_A$). The top-down propagation is performed quite naturally using the classical rules; for instance, a XOR that has a $\bot$ top branch and a $\top$ incoming branch will have another $\top$ incoming branch. The only ``special'' rule is the following:
-\begin{table}[H]
-	\centering
-	\begin{tabular}{cccccc}
-	\Tree [.{$\top$} [.{$X_A$} ] ] &$\Longrightarrow$& \Tree [.{$\top$} [.{A} ] ]&
-\Tree [.{$\bot$} [.{$X_A$} ] ] &$\Longrightarrow$& \Tree [.{$\top$} [.{$\neg$A} ] ]
-\end{tabular}
-\caption{Top-down propagation rule at the leaf-level}
-\end{table}
-
+The reasoning process amounts to a traversal of the tree, that is successively bottom-up and top-down. Note that steps (iii), (iv), (v) may be repeated more than once, until a truth value ($\top$) has been found for the root. We assume that the branches of the tree are labeled by a pair (context;truth value), where the context corresponds to what the reasoner has inferred -- what he knows to be the case.
 \bibliographystyle{plain}
 \bibliography{bibliography}
-\section*{Appendix}
-\begin{table}[H]
-	\centering
-	\begin{tabular}{c|c|c|c}
-		A XOR B & A OR B & A AND B & A IMP B \\ \hline
-		A \_ & A \_ & A B & A B \\
-		\_ B & \_ B & & $\dots$ \\
-		& A B & & \\
-	\end{tabular}
-	\caption{Mental models for basic operators}
-\end{table}
-\Tree[.K [.XOR [.K [.{K, A; $\top$} ] ] [.K [.{$;\bot$ } ] ] ] ]
-\Tree[.{K;$\top$} [.XOR [.{K;$\top$} [.{K, A; $\top$} ] ] [.{K;$\bot$} [.{$;\bot$ } ] ] ] ]\\
-
-\Tree [.{K; } [.OR [.K; [.XOR [.K; [.K;$\top$ ] ] [.K; [.$X_A$; ] ] ] ] [.K; [.XOR [.K; [.;$\bot$ ] ] [.K; [.$X_A$; ] ] ] ] ] ]
-\Tree [.{K; } [.OR [.K; [.XOR [.K;$\top$ [.K;$\top$ ] ] [.K; [.$X_A$; ] ] ] ] [.K; [.XOR [.K;$\bot$ [.;$\bot$ ] ] [.K; [.$X_A$; ] ] ] ] ] ]
-\Tree [.{K; } [.OR [.K; [.XOR [.K;$\top$; [.K;$\top$ ] ] [.K;$\bot$ [.$X_A$; ] ] ] ] [.K; [.XOR [.K;$\bot$ [.;$\bot$ ] ] [.K; [.$X_A$; ] ] ] ] ] ]
-\Tree [.{K; } [.OR [.K; [.XOR [.K;$\top$; [.K;$\top$ ] ] [.K;$\bot$ [.$\neg A$; ] ] ] ] [.K; [.XOR [.K;$\bot$ [.;$\bot$ ] ] [.K; [.$X_A$; ] ] ] ] ] ]
-\Tree [.{K;$\top$ } [.OR [.K;$\top$ [.XOR [.K;$\top$; [.K;$\top$ ] ] [.K;$\bot$ [.$\neg A$; ] ] ] ] [.K; [.XOR [.K;$\bot$ [.;$\bot$ ] ] [.K; [.$X_A$; ] ] ] ] ] ]
 \end{document}

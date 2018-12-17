@@ -6,6 +6,11 @@ Pierre Barrouillet and J~F~Lecas.
   models account.
 \newblock {\em Cognition}, 76:167--73; discussion 175, 08 2000.
 
+\bibitem{byrne2009}
+Ruth~M.J. Byrne and P.N. Johnson-Laird.
+\newblock ‘if’ and the problems of conditional reasoning.
+\newblock {\em Trends in Cognitive Sciences}, 13(7):282 -- 287, 2009.
+
 \bibitem{geurts2005}
 Bart Geurts.
 \newblock Entertaining alternatives: Disjunctions as modals.
@@ -20,5 +25,11 @@ P.N Johnson-Laird and Fabien Savary.
 Sangeet Khemlani and P.~N. Johnson-Laird.
 \newblock Disjunctive illusory inferences and how to eliminate them.
 \newblock {\em Memory {\&} Cognition}, 37(5):615--623, jul 2009.
+
+\bibitem{troelstra1977}
+Anne~S. Troelstra.
+\newblock Proof theory and constructive mathematics.
+\newblock In Jon Barwise and H.~Jerome Keisler, editors, {\em Handbook of
+  Mathematical Logic}, pages 973--1052. North-Holland Pub. Co., 1977.
 
 \end{thebibliography}
